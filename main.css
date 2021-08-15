@@ -7,14 +7,6 @@ body{
     border-bottom: 2px solid red;
 }
 
-.page{
-    
-}
-
-.footer{
-
-}
-
 .column{
    /* border: 1px solid black; */
     width: 1000px;
@@ -336,3 +328,86 @@ body{
     font-size: 20px;
 }
 
+.pages .page#kontakt {
+	background: #fcfcfc;
+}
+
+.page .content h2 {
+	text-align: center;
+	font-size: 32px;
+	margin: 20px 0 40px 0;
+}
+
+#kontakt{
+    height: 100vh;
+    margin-top: 50px;
+}
+
+.contact-page-layout {
+	display: grid;
+	grid-template: "adrese  mapa"
+	               "mailovi mapa";
+	grid-template-columns: 500px 1fr;
+    margin-top: 50px;
+}
+
+.contact-page-layout .addresses {
+	grid-area: adrese;
+	margin-bottom: 20px;
+    margin-left: 120px;
+}
+
+.contact-page-layout .electronic {
+	grid-area: mailovi;
+    margin-left: 120px;
+    margin-bottom: 50px;
+}
+
+.contact-page-layout .electronic > a{
+    text-decoration: none;
+    color: #dc0000;
+}
+
+.contact-page-layout .map {
+	grid-area: mapa;
+	margin-left: 30px;
+	border: 1px solid #dc0000;
+}   
+
+.footer {
+	border-top: 3px solid #dc0000;
+	padding: 20px 10px 40px 10px;
+	background: #fcfcfc;
+}
+
+.footer-blocks {
+	width: 1000px;
+	margin: 0px auto;
+	display: flex;
+}
+
+.footer .block {
+	flex-grow: 1;
+	text-align: center;
+}
+
+.footer .block:first-child {
+	text-align: left;
+}
+
+.footer .block:last-child {
+	text-align: right;
+}
+
+.footer-menu ul {
+	list-style: none;
+}
+
+.footer-menu ul li a {
+	text-decoration: none;
+	color: #dc0000;
+}
+
+.footer-menu ul li a:hover {
+	text-decoration: underline;
+}
